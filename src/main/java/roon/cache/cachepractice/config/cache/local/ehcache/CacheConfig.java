@@ -33,6 +33,10 @@ public class CacheConfig implements CachingConfigurer {
 	public CacheManager cacheManager() {
 		Map<String, CacheConfiguration<?, ?>> cacheConfigMap = new HashMap<>();
 
+		/* todo
+		* key를 string으로만 할 수가 없을 듯. int 같은거 파라미터로 들어오면 캐시 못하니까.
+		* 근데 keyGenerator가 동작한다면 괜찮을텐데? keyGenerator가 동작안해서 오류나는건가
+		* */
 		CacheConfiguration<Object, Object> cacheConfiguration = CacheConfigurationBuilder.newCacheConfigurationBuilder(
 						Object.class,
 						Object.class,
@@ -67,7 +71,9 @@ public class CacheConfig implements CachingConfigurer {
 		}
 	}
 
-	// 얘 동작안하는거 같은데..?
+	/* todo
+	* 얘 동작안하는거 같은데..?
+	* */
 	@Bean
 	@Override
 	public KeyGenerator keyGenerator() {
