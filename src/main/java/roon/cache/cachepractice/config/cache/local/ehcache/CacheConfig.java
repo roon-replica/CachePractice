@@ -73,6 +73,7 @@ public class CacheConfig implements CachingConfigurer {
 
 	/* todo
 	* 얘 동작안하는거 같은데..?
+	* https://www.baeldung.com/spring-cache-custom-keygenerator
 	* */
 	@Bean
 	@Override

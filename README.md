@@ -11,3 +11,4 @@
 ### 참고
 - [ehcache 3 docs](https://www.ehcache.org/documentation/3.10/getting-started.html)
 - [spring cache abstraction (version 6.0.7)](https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#cache)
+- [spring data redis docs](https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/)
